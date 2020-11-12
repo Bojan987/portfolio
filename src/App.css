@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+#main-header img {
+
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  border-radius: 50%;
+  
+}
+.profile-img {
+  justify-content: space-around;
+
+  padding-top: 50px;
+  box-shadow: 0px 9px 6px -6px rgb(59, 59, 59);
+}
+#main-header .port-item {
+  width: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-black {
+  color: #fff;
+  background: #000;
+}
+.Header {
+  /* margin: 5px; */
+  box-shadow: 0px 9px 6px -6px black;
+  
+}
+#home,
+#resume,
+#myProjects,
+#contact{
+    padding-top: 1rem;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.git{
+  margin-right: 100px;
+}
+.moduleBG{
+  width: 16rem;
+}
+.homeRow{
+   justify-content: space-around;
+        }
+.projectImage{
+  height: 100%;
+  width: 100%;
+        }
+.projectImage:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.contactIcons{
   display: flex;
-  flex-direction: column;
+  justify-content: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.phoneContact{
+  margin-left: 1.5rem;
+}
+.phoneNumber,
+.email{
+  margin-left: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
+@media only screen and (max-width: 975px){
+  .homeRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .name{
+    font-size:2rem ;
+  }
+.phoneNumber,
+.email{
+    font-size: 0.8rem;
+    margin-left: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
