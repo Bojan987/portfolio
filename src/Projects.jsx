@@ -1,6 +1,7 @@
 import React from "react";
 import { Card,Row,Col} from 'react-bootstrap';
 import project1 from './image/dota-teams-image.jpg'
+import project2 from './image/dota-games-image.jpg'
 
 export const Projects = ()=>{
     return (
@@ -22,8 +23,8 @@ export const Projects = ()=>{
                       </a>
                     </Col>
                     <Col lg={6}>
-                    <a href='https://dota2-teams.netlify.app/'>
-                        <img src={project1} alt='Project'className='projectImage'/>
+                    <a href='https://dota-games.netlify.app/'>
+                        <img src={project2} alt='Project'className='projectImage'/>
                       </a>
                     </Col>
                </Row>
