@@ -12,7 +12,7 @@ export const Contact = ()=>{
         title: '',
         message: '',
     })
-    
+    const [errorClass,setErrorClass] = useState('text-white')
     const handleChange = (name)=> (e) => {
       setValues({ ...values, [e.target.name]: e.target.value });
     }
@@ -30,6 +30,13 @@ export const Contact = ()=>{
     
     emailjs.sendForm('gmail', 'template_4u4h1ai', e.target, 'user_vfP4p6RigiFl8vMS01bdI')
     .then((result) => {
+
+        setErrorClass('text-success')
+        setTimeout(function(){ setErrorClass('text-white');  setValues({
+            email: '',
+            title: '',
+            message: '',
+        }) }, 3000);
         setValues({
             email: '',
             title: '',
@@ -37,6 +44,12 @@ export const Contact = ()=>{
         })
         console.log(result.text + ' Message Sent');
     }, (error) => {
+        setValues({
+            email: '',
+            title: '',
+            message: 'Sending Failed',
+        })
+        setErrorClass('text-danger')
         console.log(error.text + ' Sending Failed');
     });
     }
@@ -127,7 +140,7 @@ export const Contact = ()=>{
                                         />
                                     </InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl className='bg-dark text-white' type='text' placeholder='Message' as="textarea" rows={3} name='message' onChange={handleChange()} value={values.message} required>
+                                <FormControl className={`bg-dark ${errorClass}`} type='text' placeholder='Message' as="textarea" rows={3} name='message' onChange={handleChange()} value={values.message} required>
                                 </FormControl>
                             </InputGroup>
                         </FormGroup>
