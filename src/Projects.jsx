@@ -24,7 +24,7 @@ export const Projects = ()=>{
                       </a>
                     </Col>
                     <Col lg={6}>
-                    <a href='https://dota-games.netlify.app/'>
+                    <a href='https://pupin-bites.netlify.app/'>
                         <img src={project3} alt='Project'className='projectImage'/>
                       </a>
                     </Col>

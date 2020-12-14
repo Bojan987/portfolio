@@ -19,7 +19,7 @@ export const Contact = ()=>{
     
     const isFormValid = () => {
       if (!values.title || !values.email || !values.message) {
-    
+        
     return false;}
     else {
     return true;}
@@ -30,7 +30,11 @@ export const Contact = ()=>{
     
     emailjs.sendForm('gmail', 'template_4u4h1ai', e.target, 'user_vfP4p6RigiFl8vMS01bdI')
     .then((result) => {
-    
+        setValues({
+            email: '',
+            title: '',
+            message: 'Message successfully sent',
+        })
         console.log(result.text + ' Message Sent');
     }, (error) => {
         console.log(error.text + ' Sending Failed');
@@ -41,10 +45,11 @@ export const Contact = ()=>{
     
     e.preventDefault()
       if (!isFormValid()) {
-         //message of error in the screen, maybe sweet alerts
+        
          console.log('Something went Wrong!')
       } else{ 
         sendEmail(e)
+      
       }
     };
     
