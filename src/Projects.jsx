@@ -1,7 +1,8 @@
 import React from "react";
 import { Card,Row,Col} from 'react-bootstrap';
-import project1 from './image/dota-teams-image.jpg'
-import project2 from './image/dota-games-image.jpg'
+import project1 from './image/dota-teams-image2.jpg'
+import project2 from './image/dota-games-image2.jpg'
+import project3 from './image/pupinBites-image.jpg'
 
 export const Projects = ()=>{
     return (
@@ -24,10 +25,18 @@ export const Projects = ()=>{
                     </Col>
                     <Col lg={6}>
                     <a href='https://dota-games.netlify.app/'>
+                        <img src={project3} alt='Project'className='projectImage'/>
+                      </a>
+                    </Col>
+                    <Col lg={{ span: 6, offset: 3 }}>
+                    <a href='https://dota-games.netlify.app/'>
                         <img src={project2} alt='Project'className='projectImage'/>
                       </a>
                     </Col>
+                  
                </Row>
+
+
               </Card.Body>
           </Card>
         </>
