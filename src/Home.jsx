@@ -10,7 +10,7 @@ export const Home = () => {
           <Card.Body className="bg-primary text-white py-5">
             <h2>Welcome to my Page</h2>
             <p className ="lead">
-              As a Self-taught Developer, I have learned that the price of
+              As a Developer, I have learned that the price of
               success is dedication, hard work and an incessant devotion to the
               things you want to see happen.
             </p>

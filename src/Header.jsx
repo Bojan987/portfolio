@@ -61,7 +61,7 @@ export const Header = () => {
                   </Row>
                 </div>
                 <div className="p-4 bg-black">
-                  Self-taught Frontend Developer
+                  Front-End Web Developer
                 </div>
 
                 <div>
