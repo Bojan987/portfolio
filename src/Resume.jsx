@@ -43,7 +43,7 @@ export const Resume = ()=>{
                             </Card.Body>
                         </Card>
                         <h3>Where Have I Worked?</h3>
-                        <p>In the last 11 months i have fully dedicated myself to coding</p>
+                        {/* <p>In the last 11 months i have fully dedicated myself to coding</p> */}
                         <hr/>
                         <CardDeck>
                             <Card>
