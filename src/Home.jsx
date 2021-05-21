@@ -33,6 +33,12 @@ export const Home = () => {
           <ProgressBar now={40} variant="success" className="mb-3" />
           <h4>React.js</h4>
           <ProgressBar now={40} variant="success" className="mb-3" />
+          <h4>NodeJS</h4>
+          <ProgressBar now={25} variant="success" className="mb-3" />
+          <h4>MongoDB</h4>
+          <ProgressBar now={20} variant="success" className="mb-3" />
+          <h4>MS SQL</h4>
+          <ProgressBar now={20} variant="success" className="mb-3" />
         </Card.Body>
       </Card>
       </>

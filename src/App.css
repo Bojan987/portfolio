@@ -68,7 +68,16 @@
 .email{
   margin-left: 8px;
 }
+.job{
+  min-height: 470px;
+  max-height: 470px;
+}
 
+.job-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
