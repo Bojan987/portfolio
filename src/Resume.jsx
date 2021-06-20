@@ -58,7 +58,7 @@ export const Resume = () => {
                             Position: Intern
                           </p>
 
-                          <Card.Text> Developing Newletter platform</Card.Text>
+                          <Card.Text> Developing Newsletter platform</Card.Text>
                           <Card.Text> Technology stack: MERN</Card.Text>
                         </Col>
                       </Row>
